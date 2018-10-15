@@ -1,0 +1,286 @@
+@media (max-width: 1200px){
+	.container {
+		max-width: 970px;
+	}
+
+	.right-section {
+		width: 49%;
+	}
+
+	.tour-item-parent {
+		width: 50%;
+	}
+
+}
+@media (max-width: 1170px){
+	.tabulation {
+		width: 425px;
+	}
+
+	.tour-content {
+		padding-bottom: 0px;
+	}
+}
+
+
+@media (max-width: 992px){
+	.container {
+		max-width: 750px;
+	}
+
+	.tabulation {
+		width: 325px;
+	}
+
+	.right-section {
+		width: 50%;
+	}
+
+	.right-section .right-section-h1 {
+		font-size: 37px;
+	}
+
+	.right-section-p {
+		font-size: 20px;
+	}
+
+	.right-section {
+	  padding-top: 5%;
+	}
+
+	.tours-items .tour-item-parent {
+		width: 49.5%;
+	}
+
+	.tours-items .tour-item {
+		width: 100%;
+	}
+
+	.tours-items .tour-item-parent .tour-item img {
+		height: 100%;
+	}
+
+	.features-info .items {
+		width: 100%;
+	}
+
+	.recent-all-items .recent-item-parent {
+		width: 50%;
+	}
+
+	.flight-info-child,
+	.flight-info-second {
+		width: 100%;
+	}
+
+	/* car page */
+	.car-item {
+		width: 100%;
+	}
+
+	/* contact page */
+	.left-contact, 
+	.right-contact {
+		float: inherit;
+		width: 100%;
+	}
+
+	.right-contact .inputItem {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px){
+	/* submenu */
+.offcanvas-menu {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: -250px;
+	padding: 20px;
+	width: 240px;
+	height: 100%;
+	background-color: #222;
+	z-index: 100000;
+	transition: right 0.6s;
+	-webkit-transition: right 0.6s;
+	-o-transition: right 0.6s;
+  }
+
+  .offcanvas-menu.left {
+	right: 0;	
+  }
+  
+  .wrapper {
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: transform 0.5s;
+  }
+
+  
+  .wrapper.left{
+	-webkit-transform: translateX(-240px);
+	-ms-transform: translateX(-240px);
+	transform: translateX(-240px);
+  }
+  
+  .offcanvas-menu ul .offcanvas-li {
+	padding: 0;
+	margin: 0 0 15px 0;
+	list-style: none;
+  }
+  
+  .offcanvas-menu ul li a {
+	font-size: 17px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.4);
+	-webkit-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+  }
+  
+  .offcanvas-menu ul li a:hover {
+	color: #F78536;
+  }
+  
+  .sub-menu-ul {
+	margin-top: 9px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+  }
+  /* submenu */
+
+	.banner .left-section .tabulation {
+		width: 100%;
+	}
+
+	.left-section,
+	.right-section {
+		width: 100%;
+	}
+
+	.right-section {
+		display: none;
+	}
+
+	#header .navbar {
+		display: none;
+	}
+
+	.nav-toggle {
+		display: block;
+		position: absolute;
+    	right: 15px;
+		top: 34px;
+		cursor: pointer;
+	}
+
+	.tours-items .tour-item-parent {
+		width: 100%;
+		height: 25%;
+	}
+
+	.tours-items .tour-item {
+		width: 100%;
+	}
+
+	.destinations-items .dest-item {
+		width: 50%;
+	}
+
+	.half-dest-item .half-content h4 {
+		font-size: 27px;
+	}
+
+	.recent-all-items .recent-item-parent {
+		width: 100%;
+	}
+
+	.img-section {
+		height: 35rem;
+	}
+
+	.recent-item-parent {
+		margin-bottom: 30px;
+	}
+
+	.recent-item-parent:nth-child(3) {
+		margin-bottom: 0px;
+	}
+
+	.happy-client {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.footer-section {
+		width: 100%;
+	}
+
+	.footer-social p {
+		padding: 0 10%;
+		line-height: 1.6;
+		text-align: center;
+	}
+
+
+	/* flight html */
+	.flight-info {
+		padding: 0 15px 50px 15px;
+	}
+
+	.todayFlight {
+		padding-left: 15px;
+	}
+}
+
+
+@media (max-width: 480px){
+	.section-top h3 {
+		font-size: 35px;
+	}
+
+	.section-top p {
+		font-size: 17px;
+	}
+
+	.todayFlight {
+		font-size: 30px;
+	}
+
+	.tab-parent {
+		padding-left: 0;
+		padding-right: 0px;
+	}
+
+	.tabulation-top li a {
+		font-size: 13px;
+	}
+
+	.destinations-items .dest-item {
+		width: 100%;
+	}
+
+	.half-dest-item {
+		width: 100%;
+	}
+
+	.footer-social p {
+		padding: 0 5%;
+		line-height: 1.6;
+		text-align: center;
+	}
+
+	.plane-name,
+	.plane-desc {
+		padding: 7px 10px !important;
+	} 
+
+	.plane-price {
+		font-size: 20px;
+	}
+
+	.plane-name span {
+		font-size: 16px;
+	}
+}

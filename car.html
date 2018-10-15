@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+  <body>
+  <!-- canvas menu -->
+  <nav class="offcanvas-menu">
+      <ul>
+        <li class="offcanvas-li active-li"><a href="index.html">Home</a></li>
+        <li class="offcanvas-li"><a href="vacation.html">Vacations</a>
+          <ul class="sub-menu-ul">
+            <li class="offcanvas-li"><a href="#">Family</a></li>
+            <li class="offcanvas-li"><a href="#">CSS3 & HTML5</a></li>
+            <li class="offcanvas-li"><a href="#">Angular JS</a></li>
+            <li class="offcanvas-li"><a href="#">Node JS</a></li>
+            <li class="offcanvas-li"><a href="#">Django & Python</a></li>
+          </ul>
+        </li>
+        <li class="offcanvas-li"><a href="flights.html">Flights</a></li>
+        <li class="offcanvas-li"><a href="hotel.html">Hotel</a></li>
+        <li class="offcanvas-li"><a href="car.thml">Car</a></li>
+        <li class="offcanvas-li"><a href="blog.html">Blog</a></li>
+        <li class="offcanvas-li"><a class="p-r-0" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- canvas menu -->
+        
+  <div class="wrapper"> 
+    <div class="overlay" style="background-image: url(images/bg1.jpg)"></div>
+
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <div class="container-parent">
+          <div class="logo">
+            <a href="#">
+              <i class="fa fa-plane" aria-hidden="true"></i>Travel
+            </a>
+          </div>
+
+          <nav class="navbar">
+            <ul class="navbar-ul">
+              <li class="navbar-li active-li"><a class="navbar-a" href="index.html">Home</a></li>
+              <li class="navbar-li dropdown"><a class="navbar-a" href="vacation.html">Vacation <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                <div class="dropdownContent">
+                  <ul class="dropdpwn-ul">
+                    <li class="dropdown-li"><a class="dropdown-a" href="#">Family</a></li>
+                    <li class="dropdown-li"><a class="dropdown-a" href="#">Html & css</a></li>
+                    <li class="dropdown-li"><a class="dropdown-a" href="#">Angular js</a></li>
+                    <li class="dropdown-li"><a class="dropdown-a" href="#">Node js</a></li>
+                    <li class="dropdown-li"><a class="dropdown-a" href="#">Django & phyton</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navbar-li"><a class="navbar-a" href="flights.html">Flights</a></li>
+              <li class="navbar-li"><a class="navbar-a" href="hotel.html">Hotel</a></li>
+              <li class="navbar-li"><a class="navbar-a" href="car.html">Car</a></li>
+              <li class="navbar-li"><a class="navbar-a" href="blog.html">Blog</a></li>
+              <li class="navbar-li"><a class="navbar-a" href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-toggle">
+            <div class="toggle"></div>
+            <div class="toggle"></div>
+            <div class="toggle"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="left-section p-l-r">
+          <div class="tabulation">
+            <div class="tabulation-top">
+              <li class="presentation" onclick="city(event, 'Flights')"><a href="#flights">Flights</a></li>
+              <li class="presentation" onclick="city(event, 'Hotels')"><a href="#hotels">Hotels</a></li>
+              <li class="presentation" onclick="city(event, 'Packages')"><a href="#packages">Packages</a></li>
+
+              <!-- clear floats -->
+              <div class="clear"></div>
+            </div>
+
+            <div class="tab-pane active" id="Flights">
+              <div class="tab-parent">
+                <div class="top-inputs">
+                  <div class="input-fild">
+                    <label for="from">From:</label>
+                    <input id="from" type="text" class="form-control" placeholder="Los Angeles, USA">
+                  </div>
+                </div>
+
+              <div class="top-inputs">
+                  <div class="input-fild">
+                    <label for="from">To:</label>
+                    <input id="from" type="text" class="form-control" placeholder="Tokyo, Japan">
+                  </div>
+                </div>
+
+                <div class="top-inputs mt">
+                  <div class="input-fild">
+                    <label for="date-start">Check in:</label>
+                    <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
+                  </div>
+                </div>
+      
+                <div class="top-inputs mt">
+                  <div class="input-fild">
+                    <label for="date-end">Check Out:</label>
+                    <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
+                  </div>
+                </div>   
+
+                <div class="full-width-input mt input-fild">
+                  <label for="date-end">Class:</label>
+                  <div class="custom-select form-control">
+                    <select class="input-fild economy-content">
+                      <option value="1">Economy</option>
+                      <option value="2">Flat</option>
+                      <option value="3">Economy</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mt width-50 input-fild half-input">
+                  <label for="date-end">adult:</label>
+                  <div class="custom-select form-control">
+                    <select class="economy-content">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                </div>
+
+              <div class="mt width-50 input-fild half-input">
+                  <label for="date-end">Children:</label>
+                  <div class="custom-select form-control">
+                    <select>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- clear floats -->
+                <div class="clear"></div>     
+                <div class="tabulation-submit-section input-fild mt">
+                  <button type="submit" id="submit" class="tabulation-btn">Search Flight</button>
+                </div> 
+              </div>
+            </div>
+
+            <div class="tab-pane" id="Hotels">
+              <div class="tab-parent">
+                <div class="full-width-input">
+                  <div class="input-fild">
+                    <label for="date-start">City:</label>
+                    <input id="date-start" type="text" class="form-control" placeholder="Los Angeles, USA">
+                  </div>
+                </div>
+              
+                <div class="top-inputs mt">
+                  <div class="input-fild">
+                    <label for="date-start">Return:</label>
+                    <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
+                  </div>
+                </div>
+      
+                <div class="top-inputs mt">
+                  <div class="input-fild">
+                    <label for="date-end">Check Out:</label>
+                    <input id="date-end" type="date" class="form-control" value="2018-10-11" name="date">
+                  </div>
+                </div>   
+
+                <div class="full-width-input mt input-fild">
+                  <label for="date-end">Class:</label>
+                  <div class="custom-select form-control">
+                    <select class="input-fild economy-content">
+                      <option value="1">Economy</option>
+                      <option value="2">Flat</option>
+                      <option value="3">Economy</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mt width-50 input-fild half-input">
+                  <label for="date-end">adult:</label>
+                  <div class="custom-select form-control">
+                    <select class="input-fild economy-content">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mt width-50 input-fild half-input">
+                  <label for="date-end">Children:</label>
+                  <div class="custom-select form-control">
+                    <select class="input-fild economy-content">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- clear floats -->
+                <div class="clear"></div>                
+                <div class="tabulation-submit-section input-fild mt">
+                    <button type="submit" id="submit" class="tabulation-btn">Search Flight</button> 
+                </div> 
+              </div>
+            </div>
+
+        
+            <div class="tab-pane" id="Packages">
+              <div class="tab-parent">
+                <div class="top-inputs">
+                  <div class="input-fild">
+                    <label for="from">City:</label>
+                    <input id="from" type="text" class="form-control" placeholder="Los Angeles, USA">
+                  </div>
+                </div>
+
+                <div class="top-inputs">
+                  <div class="input-fild">
+                    <label for="from">Destination:</label>
+                    <input id="from" type="text" class="form-control" placeholder="Tokyo, Japan">
+                  </div>
+                </div>
+
+                <div class="top-inputs mt">
+                  <div class="input-fild">
+                    <label for="date-start">Departs:</label>
+                    <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
+                  </div>
+                </div>
+      
+                <div class="top-inputs mt">
+                  <div class="input-fild">
+                    <label for="date-end">Return:</label>
+                    <input id="date-end" type="date" class="form-control" value="2018-10-11" name="date">
+                  </div>
+                </div>   
+
+                <div class="full-width-input mt input-fild">
+                  <label for="date-end">Class:</label>
+                  <div class="custom-select form-control">
+                    <select class="input-fild economy-content">
+                      <option value="1">Economy</option>
+                      <option value="2">Flat</option>
+                      <option value="3">Economy</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mt width-50 input-fild half-input">
+                  <label for="date-end">adult:</label>
+                  <div class="custom-select form-control">
+                    <select class="input-fild economy-content">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mt width-50 input-fild half-input">
+                  <label for="date-end">Children:</label>
+                  <div class="custom-select form-control">
+                    <select class="input-fild economy-content">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+                    
+                <!-- clear floats -->
+                <div class="clear"></div>
+                <div class="tabulation-submit-section input-fild mt">
+                  <button type="submit" id="submit" class="tabulation-btn">Search Flight</button> 
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-section p-l-r">
+          <span class="right-section-span">HandCrafted by <a href="#">FreeHTML5.co</a></span>
+          <h1 class="right-section-h1">Exclusive Limited Time Offer</h1>
+          <p class="right-section-p">Fly to Hong Kong via Los Angeles, USA</p>
+          <h1 class="price">$599</h1>
+        </div>
+      </div>
+    </section>
+    <!-- banner -->
+
+    <section class="car-section p-100 bg-grey">
+        <div class="container">
+            <div class="section-top">
+                <h3>Car Rent In U.S.</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+
+            <div class="car-section-items">
+                <div class="car-item p-l-r m-b-30">
+                    <div class="yellow-background">
+                        <h4>Luxury</h4>
+                        <span class="car-price">$100 <small>/ day</small></span>
+                        <span class="car-price">$200 <small>/ week</small></span>
+                        <span class="car-price">$250 <small>/ mos.</small></span>
+                        <span class="car-price">$350 <small>Total (Tax incl.)</small></span>    
+                    </div>
+    
+                    <div class="car-img" style="background-image: url(images/car/1.jpeg)"></div>
+                </div>
+
+                <div class="car-item p-l-r m-b-30">
+                    <div class="yellow-background">
+                        <h4>Economy</h4>
+                        <span class="car-price">$100 <small>/ day</small></span>
+                        <span class="car-price">$200 <small>/ week</small></span>
+                        <span class="car-price">$250 <small>/ mos.</small></span>
+                        <span class="car-price">$350 <small>Total (Tax incl.)</small></span>    
+                    </div>
+    
+                    <div class="car-img" style="background-image: url(images/car/2.jpeg)"></div>
+                </div>
+                
+                
+                <div class="car-item p-l-r m-b-30">
+                    <div class="yellow-background">
+                        <h4>Luxury</h4>
+                        <span class="car-price">$100 <small>/ day</small></span>
+                        <span class="car-price">$200 <small>/ week</small></span>
+                        <span class="car-price">$250 <small>/ mos.</small></span>
+                        <span class="car-price">$350 <small>Total (Tax incl.)</small></span>    
+                    </div>
+    
+                    <div class="car-img" style="background-image: url(images/car/3.jpeg)"></div>
+                </div>
+                
+                <div class="car-item p-l-r m-b-30">
+                    <div class="yellow-background">
+                        <h4>Economy</h4>
+                        <span class="car-price">$100 <small>/ day</small></span>
+                        <span class="car-price">$200 <small>/ week</small></span>
+                        <span class="car-price">$250 <small>/ mos.</small></span>
+                        <span class="car-price">$350 <small>Total (Tax incl.)</small></span>    
+                    </div>
+    
+                    <div class="car-img" style="background-image: url(images/car/4.jpeg)"></div>
+                </div>
+                
+                
+                <div class="car-item p-l-r m-b-30">
+                    <div class="yellow-background">
+                        <h4>Economy</h4>
+                        <span class="car-price">$100 <small>/ day</small></span>
+                        <span class="car-price">$200 <small>/ week</small></span>
+                        <span class="car-price">$250 <small>/ mos.</small></span>
+                        <span class="car-price">$350 <small>Total (Tax incl.)</small></span>    
+                    </div>
+    
+                    <div class="car-img" style="background-image: url(images/car/5.jpeg)"></div>
+                </div>
+                
+                
+                <div class="car-item p-l-r m-b-30">
+                    <div class="yellow-background">
+                        <h4>Luxury</h4>
+                        <span class="car-price">$100 <small>/ day</small></span>
+                        <span class="car-price">$200 <small>/ week</small></span>
+                        <span class="car-price">$250 <small>/ mos.</small></span>
+                        <span class="car-price">$350 <small>Total (Tax incl.)</small></span>    
+                    </div>
+    
+                    <div class="car-img" style="background-image: url(images/car/6.jpeg)"></div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+
+    <!-- happy clients -->
+    <section class="happy-clients p-100">
+      <div class="container">
+        <h2 class="happy-clients-title">Happy Clients</h2>
+
+        <div class="happy-client p-l-r">
+          <div class="box-testimony">
+              <blockquote class="blockquote">
+                <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
+                <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+              </blockquote>
+          </div>
+          <p class="author">
+              John Doe, CEO <a href="http://freehtml5.co/">FREEHTML5.co</a>
+              <span class="subtext">Creative Director</span>
+            </p>
+        </div>
+
+        <div class="happy-client p-l-r">
+          <div class="box-testimony">
+            <blockquote class="blockquote">
+              <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
+              <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. ocean.”</p>
+            </blockquote>
+          </div>
+          <p class="author">
+            John Doe, CEO <a href="http://freehtml5.co/">FREEHTML5.co</a>
+            <span class="subtext">Creative Director</span>
+          </p>
+        </div>
+
+
+        <div class="happy-client p-l-r">
+          <div class="box-testimony">
+            <blockquote class="blockquote">
+              <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
+              <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+            </blockquote>
+          </div>
+          <p class="author">
+            John Doe, CEO <a href="http://freehtml5.co/">FREEHTML5.co</a>
+            <span class="subtext">Creative Director</span>
+          </p>
+        </div>
+        <!-- clear floats -->
+        <div class="clear"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="sections">
+          <div class="footer-section p-l-r">
+            <h4>About Travel</h4>
+            <p class="footer-section-p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+
+          <div class="footer-section p-l-r">
+            <h4>Top Flights Routes</h4>
+            <ul>
+              <li class="footer-li"><a href="#" class="footer-a">Manila Flights</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Dubai flights</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Bangkok flights</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Tokyo Flight</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">New York Flights</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section p-l-r">
+            <h4>Top Hotels</h4>
+            <ul>
+              <li class="footer-li"><a href="#" class="footer-a">Boracay Hotel</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Dubai flights</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Bangkok flights</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Singapore Hotel</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">New York Flights</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section p-l-r">
+            <h4>Interest</h4>
+            <ul>
+              <li class="footer-li"><a href="#" class="footer-a">Honeymoon and Romance</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Food & Drink</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Budget Travel</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Family Travel</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Beaches</a></li>
+            </ul>
+          </div>
+
+
+          <div class="footer-section p-l-r">
+            <h4>Best Places</h4>
+            <ul>
+              <li class="footer-li"><a href="#" class="footer-a">Boracay Beach</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Dubai</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Singapore</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Hongkong</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section p-l-r">
+            <h4>Affordable</h4>
+            <ul>
+              <li class="footer-li"><a href="#" class="footer-a">Food & Drink</a></li>
+              <li class="footer-li"><a href="#" class="footer-a">Fare Flights</a></li>
+            </ul>
+          </div>
+          <!-- clear floats -->
+          <div class="clear"></div>
+        </div> 
+        <div class="footer-social">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+          <!-- clear floats -->
+        <div class="clear"></div>
+        <p>Copyright 2016 Free Html5 <a href="#">Module</a>. All Rights Reserved. Made with  by <a href="#">Freehtml5.co</a> / Demo Images: <a href="#">Unsplash</a></p>
+        </div>
+      </div>
+    </footer>
+  </div> 
+  
+<!-- JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script> 
+</body>
+</html>
