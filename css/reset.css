@@ -73,6 +73,12 @@ li {
 	clear: both;
 }
 
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
 img {
 	width: 100%;
 	display: block;

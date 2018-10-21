@@ -12,31 +12,6 @@
   </head>
   <body>
 
-  <!-- canvas menu -->
-  <nav class="offcanvas-menu">
-      <ul>
-        <li class="offcanvas-li active-li"><a href="index.html">Home</a></li>
-        <li class="offcanvas-li"><a href="vacation.html">Vacations</a>
-          <ul class="sub-menu-ul">
-            <li class="offcanvas-li"><a href="#">Family</a></li>
-            <li class="offcanvas-li"><a href="#">CSS3 & HTML5</a></li>
-            <li class="offcanvas-li"><a href="#">Angular JS</a></li>
-            <li class="offcanvas-li"><a href="#">Node JS</a></li>
-            <li class="offcanvas-li"><a href="#">Django & Python</a></li>
-          </ul>
-        </li>
-        <li class="offcanvas-li"><a href="flights.html">Flights</a></li>
-        <li class="offcanvas-li"><a href="hotel.html">Hotel</a></li>
-        <li class="offcanvas-li"><a href="car.thml">Car</a></li>
-        <li class="offcanvas-li"><a href="blog.html">Blog</a></li>
-        <li class="offcanvas-li"><a class="p-r-0" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- canvas menu -->
-
-  <div class="wrapper"> 
-    <div class="overlay" style="background-image: url(images/bg1.jpg)"></div>
-
     <!-- header -->
     <header id="header">
       <div class="container">
@@ -79,22 +54,46 @@
     </header>
     <!-- header -->
 
+  <div class="wrapper"> 
+    <div class="overlay" style="background-image: url(images/bg1.jpg)"></div>
+
+     <!-- canvas menu -->
+  <nav class="offcanvas-menu">
+    <ul class="offcanvas-menu-ul">
+      <li class="offcanvas-li active-li"><a href="index.html">Home</a></li>
+      <li class="offcanvas-li"><a href="vacation.html">Vacations</a>
+        <ul class="sub-menu-ul">
+          <li class="offcanvas-li"><a href="#">Family</a></li>
+          <li class="offcanvas-li"><a href="#">CSS3 & HTML5</a></li>
+          <li class="offcanvas-li"><a href="#">Angular JS</a></li>
+          <li class="offcanvas-li"><a href="#">Node JS</a></li>
+          <li class="offcanvas-li"><a href="#">Django & Python</a></li>
+        </ul>
+      </li>
+      <li class="offcanvas-li"><a href="flights.html">Flights</a></li>
+      <li class="offcanvas-li"><a href="hotel.html">Hotel</a></li>
+      <li class="offcanvas-li"><a href="car.html">Car</a></li>
+      <li class="offcanvas-li"><a href="blog.html">Blog</a></li>
+      <li class="offcanvas-li"><a class="p-r-0" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- canvas menu -->
+
+
+
     <!-- banner -->
     <section class="banner">
-      <div class="container">
-        <div class="left-section p-l-r">
+      <div class="container clearfix">
+        <div class="left-section float-left p-l-r">
           <div class="tabulation">
-            <div class="tabulation-top">
+            <div class="tabulation-top clearfix">
               <li class="presentation" onclick="city(event, 'Flights')"><a href="#flights">Flights</a></li>
               <li class="presentation" onclick="city(event, 'Hotels')"><a href="#hotels">Hotels</a></li>
               <li class="presentation" onclick="city(event, 'Packages')"><a href="#packages">Packages</a></li>
-
-              <!-- clear floats -->
-              <div class="clear"></div>
             </div>
 
             <div class="tab-pane active" id="Flights">
-              <div class="tab-parent">
+              <div class="tab-parent clearfix">
                 <div class="top-inputs">
                   <div class="input-fild">
                     <label for="from">From:</label>
@@ -156,17 +155,15 @@
                       <option value="5">5</option>
                     </select>
                   </div>
-                </div>
-                <!-- clear floats -->
-                <div class="clear"></div>     
-                <div class="tabulation-submit-section input-fild mt">
+                </div>    
+                <div class="tabulation-submit-section input-fild mt float-right width-100">
                   <input type="submit" id="submit" class="tabulation-btn" value="Search Flight">
                 </div> 
               </div>
             </div>
 
             <div class="tab-pane" id="Hotels">
-              <div class="tab-parent">
+              <div class="tab-parent clearfix">
                 <div class="full-width-input">
                   <div class="input-fild">
                     <label for="date-start">City:</label>
@@ -221,11 +218,8 @@
                       <option value="5">5</option>
                     </select>
                   </div>
-                </div>
-
-                <!-- clear floats -->
-                <div class="clear"></div>                
-                <div class="tabulation-submit-section input-fild mt">
+                </div>              
+                <div class="tabulation-submit-section input-fild mt float-right width-100">
                     <button type="submit" id="submit" class="tabulation-btn">Search Flight</button> 
                 </div> 
               </div>
@@ -233,7 +227,7 @@
 
         
             <div class="tab-pane" id="Packages">
-              <div class="tab-parent">
+              <div class="tab-parent clearfix">
                 <div class="top-inputs">
                   <div class="input-fild">
                     <label for="from">City:</label>
@@ -296,10 +290,7 @@
                     </select>
                   </div>
                 </div>
-                    
-                <!-- clear floats -->
-                <div class="clear"></div>
-                <div class="tabulation-submit-section input-fild mt">
+                <div class="tabulation-submit-section input-fild mt width-100 float-right">
                   <button type="submit" id="submit" class="tabulation-btn">Search Flight</button> 
                 </div> 
               </div>
@@ -307,7 +298,7 @@
           </div>
         </div>
 
-        <div class="right-section p-l-r">
+        <div class="right-section float-right p-l-r">
           <span class="right-section-span">HandCrafted by <a href="#">FreeHTML5.co</a></span>
           <h1 class="right-section-h1">Exclusive Limited Time Offer</h1>
           <p class="right-section-p">Fly to Hong Kong via Los Angeles, USA</p>
@@ -376,9 +367,9 @@
     <!-- features -->
     <section class="features bg-white p-100" id="features">
       <div class="container">
-        <div class="features-info">
+        <div class="features-info clearfix">
     
-          <div class="items p-l-r">
+          <div class="items float-left p-l-r">
             <div class="icon">
               <i class="fa fa-globe" aria-hidden="true"></i>
             </div>
@@ -389,7 +380,7 @@
             </div>
           </div>
        
-            <div class="items p-l-r">
+            <div class="items float-left p-l-r">
               <div class="icon">
                 <i class="fa fa-google-wallet" aria-hidden="true"></i>
               </div>
@@ -400,7 +391,7 @@
               </div>
             </div>
     
-          <div class="items p-l-r">
+          <div class="items float-left p-l-r">
             <div class="icon">
               <i class="fa fa-trophy" aria-hidden="true"></i>
             </div>
@@ -411,7 +402,7 @@
             </div>
           </div>
            
-        <div class="items p-l-r">
+        <div class="items float-left p-l-r">
           <div class="icon">
             <i class="fa fa-bell-o" aria-hidden="true"></i>
           </div>
@@ -422,7 +413,7 @@
           </div>
         </div>
                 
-        <div class="items p-l-r">
+        <div class="items float-left p-l-r">
           <div class="icon">
               <i class="fa fa-comments-o" aria-hidden="true"></i>
           </div>
@@ -434,7 +425,7 @@
         </div>
     
 
-        <div class="items p-l-r">
+        <div class="items float-left p-l-r">
           <div class="icon">
               <i class="fa fa-address-card" aria-hidden="true"></i>
           </div>
@@ -444,8 +435,6 @@
               <a class="read-more" href="#">read more</a>
           </div>
         </div>
-        <!-- clear floats -->
-        <div class="clear"></div>
       </div>
     </div>
     </section>
@@ -454,8 +443,8 @@
 
     <!-- destinations -->
     <section class="destinations" id="destinations">
-      <div class="destinations-items">
-        <div class="dest-item" style="background-image: url(images/country/1.jpeg)">
+      <div class="destinations-items clearfix">
+        <div class="dest-item float-left" style="background-image: url(images/country/1.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Los Angeles</h4>
@@ -463,7 +452,7 @@
           </a>
         </div>
 
-        <div class="dest-item" style="background-image: url(images/country/2.jpeg)">
+        <div class="dest-item float-left" style="background-image: url(images/country/2.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Hongkong</h4>
@@ -471,7 +460,7 @@
           </a>
         </div>
         
-        <div class="dest-item" style="background-image: url(images/country/3.jpeg)">
+        <div class="dest-item float-left" style="background-image: url(images/country/3.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Italy</h4>
@@ -479,7 +468,7 @@
           </a>
         </div>
 
-        <div class="dest-item" style="background-image: url(images/country/4.jpeg)">
+        <div class="dest-item float-left" style="background-image: url(images/country/4.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Philippines</h4>
@@ -487,7 +476,7 @@
           </a>
         </div>  
 
-        <div class="dest-item" style="background-image: url(images/country/5.jpeg)">
+        <div class="dest-item float-left" style="background-image: url(images/country/5.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Japan</h4>
@@ -495,14 +484,14 @@
           </a>
         </div> 
 
-        <div class="half-dest-item">
+        <div class="half-dest-item float-left">
             <div class="half-content">
               <h4>Most Popular Destinations</h4>
               <a href="#" class="btn-third">View All Destinations</a>
             </div>
         </div>  
 
-        <div class="dest-item" style="background-image: url(images/country/6.jpeg)">
+        <div class="dest-item float-left" style="background-image: url(images/country/6.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Paris</h4>
@@ -510,7 +499,7 @@
           </a>
         </div>   
 
-        <div class="dest-item" style="background-image: url(images/country/7.jpeg)">
+        <div class="dest-item float-left" style="background-image: url(images/country/7.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Singapore</h4>
@@ -518,7 +507,7 @@
           </a>
         </div>
 
-        <div class="dest-item" style="background-image: url(images/country/8.jpeg)">
+        <div class="dest-item float-left" style="background-image: url(images/country/8.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Madagascar</h4>
@@ -526,7 +515,7 @@
           </a>
         </div>
         
-        <div class="dest-item" style="background-image: url(images/country/9.jpeg)">
+        <div class="dest-item float-left" style="background-image: url(images/country/9.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Egypt</h4>
@@ -534,15 +523,13 @@
           </a>
         </div>
 
-        <div class="dest-item" style="background-image: url(images/country/10.jpeg)">
+        <div class="dest-item float-left" style="background-image: url(images/country/10.jpeg)">
           <a class="dest-item-a" href="#">
             <div class="dest-item-content">
               <h4>Indonesia</h4>
             </div>
           </a>
         </div>      
-        <!-- clear floats -->
-        <div class="clear"></div>
       </div>
     </section>  
     <!-- destinations -->
@@ -556,8 +543,8 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
         </div>
 
-        <div class="recent-all-items">
-          <div class="recent-item-parent p-l-r">
+        <div class="recent-all-items clearfix">
+          <div class="recent-item-parent float-left p-l-r">
             <div class="recent-item">
               <a class="img-a" href="#">        
                 <div class="img-section" style="background-image: url(images/recent/1.jpg)"></div>
@@ -565,12 +552,9 @@
 
               <div class="recent-content"> 
                 <h4>30% Discount to Travel All Around the World</h4>
-                <div class="date-and-comment">
+                <div class="date-and-comment clearfix">
                   <span class="date float-left">Sep. 15th</span>
                   <span class="comment float-right">21 <i class="fa fa-comment" aria-hidden="true"></i></span>
-
-                  <!-- clear floats -->
-                  <div class="clear"></div>
                 </div>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <a class="read-more" href="#">Learn More...</a>
@@ -579,7 +563,7 @@
           </div>
 
 
-          <div class="recent-item-parent p-l-r">
+          <div class="recent-item-parent float-left p-l-r">
             <div class="recent-item">
                 <a class="img-a" href="#">        
                   <div class="img-section" style="background-image: url(images/recent/2.jpg)"></div>
@@ -587,12 +571,9 @@
 
               <div class="recent-content"> 
                 <h4>30% Discount to Travel All Around the World</h4>
-                <div class="date-and-comment">
+                <div class="date-and-comment clearfix">
                   <span class="date float-left">Sep. 15th</span>
                   <span class="comment float-right">21 <i class="fa fa-comment" aria-hidden="true"></i></span>
-
-                  <!-- clear floats -->
-                  <div class="clear"></div>
                 </div>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <a class="read-more" href="#">Learn More...</a>
@@ -601,7 +582,7 @@
           </div>
 
 
-          <div class="recent-item-parent p-l-r">
+          <div class="recent-item-parent float-left p-l-r">
             <div class="recent-item">
               <a class="img-a" href="#">        
                 <div class="img-section" style="background-image: url(images/recent/3.jpg)"></div>
@@ -609,21 +590,15 @@
 
               <div class="recent-content"> 
                 <h4>30% Discount to Travel All Around the World</h4>
-                <div class="date-and-comment">
+                <div class="date-and-comment clearfix">
                   <span class="date float-left">Sep. 15th</span>
                   <span class="comment float-right">21 <i class="fa fa-comment" aria-hidden="true"></i></span>
-
-                  <!-- clear floats -->
-                  <div class="clear"></div>
                 </div>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <a class="read-more" href="#">Learn More...</a>
               </div>
             </div>
           </div>
-
-          <!-- clear floats -->
-          <div class="clear"></div>
         </div>
 
         <div class="button">  
@@ -636,10 +611,10 @@
 
     <!-- happy clients -->
     <section class="happy-clients p-100">
-      <div class="container">
+      <div class="container clearfix">
         <h2 class="happy-clients-title">Happy Clients</h2>
 
-        <div class="happy-client p-l-r">
+        <div class="happy-client float-left p-l-r">
           <div class="box-testimony">
               <blockquote class="blockquote">
                 <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
@@ -652,7 +627,7 @@
             </p>
         </div>
 
-        <div class="happy-client p-l-r">
+        <div class="happy-client float-left p-l-r">
           <div class="box-testimony">
             <blockquote class="blockquote">
               <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
@@ -666,7 +641,7 @@
         </div>
 
 
-        <div class="happy-client p-l-r">
+        <div class="happy-client float-left p-l-r">
           <div class="box-testimony">
             <blockquote class="blockquote">
               <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
@@ -678,20 +653,18 @@
             <span class="subtext">Creative Director</span>
           </p>
         </div>
-        <!-- clear floats -->
-        <div class="clear"></div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container">
-        <div class="sections">
-          <div class="footer-section p-l-r">
+        <div class="sections clearfix">
+          <div class="footer-section float-left p-l-r">
             <h4>About Travel</h4>
             <p class="footer-section-p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </div>
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Top Flights Routes</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Manila Flights</a></li>
@@ -702,7 +675,7 @@
             </ul>
           </div>
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Top Hotels</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Boracay Hotel</a></li>
@@ -713,7 +686,7 @@
             </ul>
           </div>
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Interest</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Honeymoon and Romance</a></li>
@@ -725,7 +698,7 @@
           </div>
 
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Best Places</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Boracay Beach</a></li>
@@ -735,26 +708,22 @@
             </ul>
           </div>
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Affordable</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Food & Drink</a></li>
               <li class="footer-li"><a href="#" class="footer-a">Fare Flights</a></li>
             </ul>
           </div>
-          <!-- clear floats -->
-          <div class="clear"></div>
         </div> 
         <div class="footer-social">
-          <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          <ul class="clearfix">
+            <li class="float-left"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="float-left"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="float-left"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="float-left"><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li class="float-left"><a href="#"><i class="fa fa-dribbble"></i></a></li>
           </ul>
-          <!-- clear floats -->
-        <div class="clear"></div>
         <p>Copyright 2016 Free Html5 <a href="#">Module</a>. All Rights Reserved. Made with  by <a href="#">Freehtml5.co</a> / Demo Images: <a href="#">Unsplash</a></p>
         </div>
       </div>

@@ -11,37 +11,13 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
   </head>
   <body>
-  <!-- canvas menu -->
-  <nav class="offcanvas-menu">
-      <ul>
-        <li class="offcanvas-li active-li"><a href="index.html">Home</a></li>
-        <li class="offcanvas-li"><a href="vacation.html">Vacations</a>
-          <ul class="sub-menu-ul">
-            <li class="offcanvas-li"><a href="#">Family</a></li>
-            <li class="offcanvas-li"><a href="#">CSS3 & HTML5</a></li>
-            <li class="offcanvas-li"><a href="#">Angular JS</a></li>
-            <li class="offcanvas-li"><a href="#">Node JS</a></li>
-            <li class="offcanvas-li"><a href="#">Django & Python</a></li>
-          </ul>
-        </li>
-        <li class="offcanvas-li"><a href="flights.html">Flights</a></li>
-        <li class="offcanvas-li"><a href="hotel.html">Hotel</a></li>
-        <li class="offcanvas-li"><a href="car.thml">Car</a></li>
-        <li class="offcanvas-li"><a href="blog.html">Blog</a></li>
-        <li class="offcanvas-li"><a class="p-r-0" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- canvas menu -->
-        
-  <div class="wrapper"> 
-    <div class="overlay" style="background-image: url(images/bg1.jpg)"></div>
-
+    
     <!-- header -->
     <header id="header">
       <div class="container">
         <div class="container-parent">
           <div class="logo">
-            <a href="#">
+            <a href="index.html">
               <i class="fa fa-plane" aria-hidden="true"></i>Travel
             </a>
           </div>
@@ -78,243 +54,259 @@
     </header>
     <!-- header -->
 
-    <!-- banner -->
-    <section class="banner">
-      <div class="container">
-        <div class="left-section p-l-r">
-          <div class="tabulation">
-            <div class="tabulation-top">
-              <li class="presentation" onclick="city(event, 'Flights')"><a href="#flights">Flights</a></li>
-              <li class="presentation" onclick="city(event, 'Hotels')"><a href="#hotels">Hotels</a></li>
-              <li class="presentation" onclick="city(event, 'Packages')"><a href="#packages">Packages</a></li>
-
-              <!-- clear floats -->
-              <div class="clear"></div>
-            </div>
-
-            <div class="tab-pane active" id="Flights">
-              <div class="tab-parent">
-                <div class="top-inputs">
-                  <div class="input-fild">
-                    <label for="from">From:</label>
-                    <input id="from" type="text" class="form-control" placeholder="Los Angeles, USA">
-                  </div>
-                </div>
-
-              <div class="top-inputs">
-                  <div class="input-fild">
-                    <label for="from">To:</label>
-                    <input id="from" type="text" class="form-control" placeholder="Tokyo, Japan">
-                  </div>
-                </div>
-
-                <div class="top-inputs mt">
-                  <div class="input-fild">
-                    <label for="date-start">Check in:</label>
-                    <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
-                  </div>
-                </div>
-      
-                <div class="top-inputs mt">
-                  <div class="input-fild">
-                    <label for="date-end">Check Out:</label>
-                    <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
-                  </div>
-                </div>   
-
-                <div class="full-width-input mt input-fild">
-                  <label for="date-end">Class:</label>
-                  <div class="custom-select form-control">
-                    <select class="input-fild economy-content">
-                      <option value="1">Economy</option>
-                      <option value="2">Flat</option>
-                      <option value="3">Economy</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="mt width-50 input-fild half-input">
-                  <label for="date-end">adult:</label>
-                  <div class="custom-select form-control">
-                    <select class="economy-content">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div>
-                </div>
-
-              <div class="mt width-50 input-fild half-input">
-                  <label for="date-end">Children:</label>
-                  <div class="custom-select form-control">
-                    <select>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </div>
-                </div>
-                <!-- clear floats -->
-                <div class="clear"></div>     
-                <div class="tabulation-submit-section input-fild mt">
-                  <button type="submit" id="submit" class="tabulation-btn">Search Flight</button>
-                </div> 
-              </div>
-            </div>
-
-            <div class="tab-pane" id="Hotels">
-              <div class="tab-parent">
-                <div class="full-width-input">
-                  <div class="input-fild">
-                    <label for="date-start">City:</label>
-                    <input id="date-start" type="text" class="form-control" placeholder="Los Angeles, USA">
-                  </div>
-                </div>
-              
-                <div class="top-inputs mt">
-                  <div class="input-fild">
-                    <label for="date-start">Return:</label>
-                    <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
-                  </div>
-                </div>
-      
-                <div class="top-inputs mt">
-                  <div class="input-fild">
-                    <label for="date-end">Check Out:</label>
-                    <input id="date-end" type="date" class="form-control" value="2018-10-11" name="date">
-                  </div>
-                </div>   
-
-                <div class="full-width-input mt input-fild">
-                  <label for="date-end">Class:</label>
-                  <div class="custom-select form-control">
-                    <select class="input-fild economy-content">
-                      <option value="1">Economy</option>
-                      <option value="2">Flat</option>
-                      <option value="3">Economy</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="mt width-50 input-fild half-input">
-                  <label for="date-end">adult:</label>
-                  <div class="custom-select form-control">
-                    <select class="input-fild economy-content">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="mt width-50 input-fild half-input">
-                  <label for="date-end">Children:</label>
-                  <div class="custom-select form-control">
-                    <select class="input-fild economy-content">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </div>
-                </div>
-
-                <!-- clear floats -->
-                <div class="clear"></div>                
-                <div class="tabulation-submit-section input-fild mt">
-                    <button type="submit" id="submit" class="tabulation-btn">Search Flight</button> 
-                </div> 
-              </div>
-            </div>
-
         
-            <div class="tab-pane" id="Packages">
-              <div class="tab-parent">
-                <div class="top-inputs">
-                  <div class="input-fild">
-                    <label for="from">City:</label>
-                    <input id="from" type="text" class="form-control" placeholder="Los Angeles, USA">
-                  </div>
-                </div>
+  <div class="wrapper"> 
+    <div class="overlay" style="background-image: url(images/bg1.jpg)"></div>
+  
+  <!-- canvas menu -->
+  <nav class="offcanvas-menu">
+      <ul class="offcanvas-menu-ul">
+        <li class="offcanvas-li active-li"><a href="index.html">Home</a></li>
+        <li class="offcanvas-li"><a href="vacation.html">Vacations</a>
+          <ul class="sub-menu-ul">
+            <li class="offcanvas-li"><a href="#">Family</a></li>
+            <li class="offcanvas-li"><a href="#">CSS3 & HTML5</a></li>
+            <li class="offcanvas-li"><a href="#">Angular JS</a></li>
+            <li class="offcanvas-li"><a href="#">Node JS</a></li>
+            <li class="offcanvas-li"><a href="#">Django & Python</a></li>
+          </ul>
+        </li>
+        <li class="offcanvas-li"><a href="flights.html">Flights</a></li>
+        <li class="offcanvas-li"><a href="hotel.html">Hotel</a></li>
+        <li class="offcanvas-li"><a href="car.thml">Car</a></li>
+        <li class="offcanvas-li"><a href="blog.html">Blog</a></li>
+        <li class="offcanvas-li"><a class="p-r-0" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- canvas menu -->  
+  
 
-                <div class="top-inputs">
-                  <div class="input-fild">
-                    <label for="from">Destination:</label>
-                    <input id="from" type="text" class="form-control" placeholder="Tokyo, Japan">
-                  </div>
-                </div>
+ <!-- banner -->
+ <section class="banner">
+  <div class="container clearfix">
+    <div class="left-section float-left p-l-r">
+      <div class="tabulation">
+        <div class="tabulation-top clearfix">
+          <li class="presentation" onclick="city(event, 'Flights')"><a href="#flights">Flights</a></li>
+          <li class="presentation" onclick="city(event, 'Hotels')"><a href="#hotels">Hotels</a></li>
+          <li class="presentation" onclick="city(event, 'Packages')"><a href="#packages">Packages</a></li>
+        </div>
 
-                <div class="top-inputs mt">
-                  <div class="input-fild">
-                    <label for="date-start">Departs:</label>
-                    <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
-                  </div>
-                </div>
-      
-                <div class="top-inputs mt">
-                  <div class="input-fild">
-                    <label for="date-end">Return:</label>
-                    <input id="date-end" type="date" class="form-control" value="2018-10-11" name="date">
-                  </div>
-                </div>   
-
-                <div class="full-width-input mt input-fild">
-                  <label for="date-end">Class:</label>
-                  <div class="custom-select form-control">
-                    <select class="input-fild economy-content">
-                      <option value="1">Economy</option>
-                      <option value="2">Flat</option>
-                      <option value="3">Economy</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="mt width-50 input-fild half-input">
-                  <label for="date-end">adult:</label>
-                  <div class="custom-select form-control">
-                    <select class="input-fild economy-content">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="mt width-50 input-fild half-input">
-                  <label for="date-end">Children:</label>
-                  <div class="custom-select form-control">
-                    <select class="input-fild economy-content">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </div>
-                </div>
-                    
-                <!-- clear floats -->
-                <div class="clear"></div>
-                <div class="tabulation-submit-section input-fild mt">
-                  <button type="submit" id="submit" class="tabulation-btn">Search Flight</button> 
-                </div> 
+        <div class="tab-pane active" id="Flights">
+          <div class="tab-parent clearfix">
+            <div class="top-inputs">
+              <div class="input-fild">
+                <label for="from">From:</label>
+                <input id="from" type="text" class="form-control" placeholder="Los Angeles, USA">
               </div>
             </div>
+
+          <div class="top-inputs">
+              <div class="input-fild">
+                <label for="from">To:</label>
+                <input id="from" type="text" class="form-control" placeholder="Tokyo, Japan">
+              </div>
+            </div>
+
+            <div class="top-inputs mt">
+              <div class="input-fild">
+                <label for="date-start">Check in:</label>
+                <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
+              </div>
+            </div>
+  
+            <div class="top-inputs mt">
+              <div class="input-fild">
+                <label for="date-end">Check Out:</label>
+                <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
+              </div>
+            </div>   
+
+            <div class="full-width-input mt input-fild">
+              <label for="date-end">Class:</label>
+              <div class="custom-select form-control">
+                <select class="input-fild economy-content">
+                  <option value="1">Economy</option>
+                  <option value="2">Flat</option>
+                  <option value="3">Economy</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt width-50 input-fild half-input">
+              <label for="date-end">adult:</label>
+              <div class="custom-select form-control">
+                <select class="economy-content">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+
+          <div class="mt width-50 input-fild half-input">
+              <label for="date-end">Children:</label>
+              <div class="custom-select form-control">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>    
+            <div class="tabulation-submit-section input-fild mt float-right width-100">
+              <input type="submit" id="submit" class="tabulation-btn" value="Search Flight">
+            </div> 
           </div>
         </div>
 
-        <div class="right-section p-l-r">
-          <span class="right-section-span">HandCrafted by <a href="#">FreeHTML5.co</a></span>
-          <h1 class="right-section-h1">Exclusive Limited Time Offer</h1>
-          <p class="right-section-p">Fly to Hong Kong via Los Angeles, USA</p>
-          <h1 class="price">$599</h1>
+        <div class="tab-pane" id="Hotels">
+          <div class="tab-parent clearfix">
+            <div class="full-width-input">
+              <div class="input-fild">
+                <label for="date-start">City:</label>
+                <input id="date-start" type="text" class="form-control" placeholder="Los Angeles, USA">
+              </div>
+            </div>
+          
+            <div class="top-inputs mt">
+              <div class="input-fild">
+                <label for="date-start">Return:</label>
+                <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
+              </div>
+            </div>
+  
+            <div class="top-inputs mt">
+              <div class="input-fild">
+                <label for="date-end">Check Out:</label>
+                <input id="date-end" type="date" class="form-control" value="2018-10-11" name="date">
+              </div>
+            </div>   
+
+            <div class="full-width-input mt input-fild">
+              <label for="date-end">Class:</label>
+              <div class="custom-select form-control">
+                <select class="input-fild economy-content">
+                  <option value="1">Economy</option>
+                  <option value="2">Flat</option>
+                  <option value="3">Economy</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt width-50 input-fild half-input">
+              <label for="date-end">adult:</label>
+              <div class="custom-select form-control">
+                <select class="input-fild economy-content">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt width-50 input-fild half-input">
+              <label for="date-end">Children:</label>
+              <div class="custom-select form-control">
+                <select class="input-fild economy-content">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>              
+            <div class="tabulation-submit-section input-fild mt float-right width-100">
+                <button type="submit" id="submit" class="tabulation-btn">Search Flight</button> 
+            </div> 
+          </div>
+        </div>
+
+    
+        <div class="tab-pane" id="Packages">
+          <div class="tab-parent clearfix">
+            <div class="top-inputs">
+              <div class="input-fild">
+                <label for="from">City:</label>
+                <input id="from" type="text" class="form-control" placeholder="Los Angeles, USA">
+              </div>
+            </div>
+
+            <div class="top-inputs">
+              <div class="input-fild">
+                <label for="from">Destination:</label>
+                <input id="from" type="text" class="form-control" placeholder="Tokyo, Japan">
+              </div>
+            </div>
+
+            <div class="top-inputs mt">
+              <div class="input-fild">
+                <label for="date-start">Departs:</label>
+                <input id="date-start" type="date" class="form-control" value="2018-10-11" name="date">
+              </div>
+            </div>
+  
+            <div class="top-inputs mt">
+              <div class="input-fild">
+                <label for="date-end">Return:</label>
+                <input id="date-end" type="date" class="form-control" value="2018-10-11" name="date">
+              </div>
+            </div>   
+
+            <div class="full-width-input mt input-fild">
+              <label for="date-end">Class:</label>
+              <div class="custom-select form-control">
+                <select class="input-fild economy-content">
+                  <option value="1">Economy</option>
+                  <option value="2">Flat</option>
+                  <option value="3">Economy</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt width-50 input-fild half-input">
+              <label for="date-end">adult:</label>
+              <div class="custom-select form-control">
+                <select class="input-fild economy-content">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt width-50 input-fild half-input">
+              <label for="date-end">Children:</label>
+              <div class="custom-select form-control">
+                <select class="input-fild economy-content">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="tabulation-submit-section input-fild mt width-100 float-right">
+              <button type="submit" id="submit" class="tabulation-btn">Search Flight</button> 
+            </div> 
+          </div>
         </div>
       </div>
-    </section>
-    <!-- banner -->
+    </div>
+
+    <div class="right-section float-right p-l-r">
+      <span class="right-section-span">HandCrafted by <a href="#">FreeHTML5.co</a></span>
+      <h1 class="right-section-h1">Exclusive Limited Time Offer</h1>
+      <p class="right-section-p">Fly to Hong Kong via Los Angeles, USA</p>
+      <h1 class="price">$599</h1>
+    </div>
+  </div>
+</section>
+<!-- banner -->
 
     <section class="car-section p-100 bg-grey">
         <div class="container">
@@ -405,10 +397,10 @@
 
     <!-- happy clients -->
     <section class="happy-clients p-100">
-      <div class="container">
+      <div class="container clearfix">
         <h2 class="happy-clients-title">Happy Clients</h2>
 
-        <div class="happy-client p-l-r">
+        <div class="happy-client float-left p-l-r">
           <div class="box-testimony">
               <blockquote class="blockquote">
                 <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
@@ -421,7 +413,7 @@
             </p>
         </div>
 
-        <div class="happy-client p-l-r">
+        <div class="happy-client float-left p-l-r">
           <div class="box-testimony">
             <blockquote class="blockquote">
               <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
@@ -435,7 +427,7 @@
         </div>
 
 
-        <div class="happy-client p-l-r">
+        <div class="happy-client float-left p-l-r">
           <div class="box-testimony">
             <blockquote class="blockquote">
               <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
@@ -447,20 +439,18 @@
             <span class="subtext">Creative Director</span>
           </p>
         </div>
-        <!-- clear floats -->
-        <div class="clear"></div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container">
-        <div class="sections">
-          <div class="footer-section p-l-r">
+        <div class="sections clearfix">
+          <div class="footer-section float-left p-l-r">
             <h4>About Travel</h4>
             <p class="footer-section-p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </div>
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Top Flights Routes</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Manila Flights</a></li>
@@ -471,7 +461,7 @@
             </ul>
           </div>
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Top Hotels</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Boracay Hotel</a></li>
@@ -482,7 +472,7 @@
             </ul>
           </div>
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Interest</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Honeymoon and Romance</a></li>
@@ -494,7 +484,7 @@
           </div>
 
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Best Places</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Boracay Beach</a></li>
@@ -504,26 +494,22 @@
             </ul>
           </div>
 
-          <div class="footer-section p-l-r">
+          <div class="footer-section float-left p-l-r">
             <h4>Affordable</h4>
             <ul>
               <li class="footer-li"><a href="#" class="footer-a">Food & Drink</a></li>
               <li class="footer-li"><a href="#" class="footer-a">Fare Flights</a></li>
             </ul>
           </div>
-          <!-- clear floats -->
-          <div class="clear"></div>
         </div> 
         <div class="footer-social">
-          <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          <ul class="clearfix">
+            <li class="float-left"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="float-left"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="float-left"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="float-left"><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li class="float-left"><a href="#"><i class="fa fa-dribbble"></i></a></li>
           </ul>
-          <!-- clear floats -->
-        <div class="clear"></div>
         <p>Copyright 2016 Free Html5 <a href="#">Module</a>. All Rights Reserved. Made with  by <a href="#">Freehtml5.co</a> / Demo Images: <a href="#">Unsplash</a></p>
         </div>
       </div>

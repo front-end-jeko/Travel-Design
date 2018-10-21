@@ -68,6 +68,10 @@
 		width: 50%;
 	}
 
+	.recent-item-parent:last-child{
+		margin-top: 30px;
+	}
+
 	.flight-info-child,
 	.flight-info-second {
 		width: 100%;
@@ -95,8 +99,8 @@
 .offcanvas-menu {
 	display: block;
 	position: fixed;
-	top: 0;
-	right: -250px;
+	top: 90px;
+	right: -241px;
 	padding: 20px;
 	width: 240px;
 	height: 100%;
@@ -108,7 +112,18 @@
   }
 
   .offcanvas-menu.left {
-	right: 0;	
+	right: -240px;	
+  }
+
+  .offcanvas-menu-ul {
+	  position: sticky;
+	  top: 115px;
+  }
+
+  .wrapper.left{
+	-webkit-transform: translateX(-240px);
+	-ms-transform: translateX(-240px);
+	transform: translateX(-240px);
   }
   
   .wrapper {
@@ -177,11 +192,7 @@
 
 	.tours-items .tour-item-parent {
 		width: 100%;
-		height: 25%;
-	}
-
-	.tours-items .tour-item {
-		width: 100%;
+		/* height: 260px; */
 	}
 
 	.destinations-items .dest-item {
@@ -194,10 +205,6 @@
 
 	.recent-all-items .recent-item-parent {
 		width: 100%;
-	}
-
-	.img-section {
-		height: 35rem;
 	}
 
 	.recent-item-parent {
@@ -226,7 +233,35 @@
 
 	/* flight html */
 	.flight-info {
-		padding: 0 15px 50px 15px;
+		padding-bottom: 50px;
+	}
+
+	.flight-info .flight-info-child {
+		padding: 0 15px;
+	}
+
+	.flight-info-second .rais-time .flight-book .plane-name {
+		width: 34%;
+	}
+
+	.flight-info-second .rais-time .flight-book .plane-desc {
+		width: 66%;
+	}
+
+	.flight-info-second .rais-time .flight-book .plane-name span {
+		font-size: 13px;
+	}
+
+	.flight-info-second .rais-time .flight-book .plane-desc .plane-desk-price h4 {
+		font-size: 14px;
+	}
+
+	.flight-info-second .rais-time .flight-book .plane-desc .plane-desk-price span {
+		font-size: 13px;
+	}
+
+	.flight-info-second .rais-time .flight-book .plane-desc .plane-price {
+		font-size: 17px;
 	}
 
 	.todayFlight {
@@ -273,7 +308,7 @@
 
 	.plane-name,
 	.plane-desc {
-		padding: 7px 10px !important;
+		padding: 7px 8px !important;
 	} 
 
 	.plane-price {
